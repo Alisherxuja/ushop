@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main-style.css">
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./plugins/my-slider/chiefslider.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+    
+    <header >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light u-header d-flex justify-content-between">
+            <div class="container-fluid container d-flex justify-content-between">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <div class="u-header__city d-flex">
+                  <span>
+                      <img src="./files/img/icons/location.svg" alt="loc"
+                          class="mr-1">
+                  </span>
+                  <div class="define-city head_a">Узбекистан</div>
+                </div>
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="tel:998901234567">
+                      <span><img src="./files/img/icons/call.svg" alt=""></span>
+                      +998 90 123 45 67
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="./recipes.html">Рецепты</a></li>
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="./delivery-and-payment.html">Доставка и самовывоз</a></li>
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="./faq.html">Вопросы и ответы</a></li>
+                  <li class="nav-item"><a class="nav-link active ord-time" aria-current="page" href="./interval.html"><img src="./files/img/icons/time.svg" alt="clock" style="margin-right: 3px;">Выбрать время</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    
+          <nav class="navbar nav-white navbar-expand-lg navbar-light bg-light d-flex justify-content-center nav-white "> 
+              <div class="container d-flex justify-content-center nd-header">
+                <a class="navbar-brand" href="./index.html"><img class="nav-logo" src="./files/img/icons/logo.png" alt=""></a>
+                <div class="collapse nd-header navbar-collapse d-flex justify-content-around" id="navbarScroll">
+                  <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                      <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle catalog" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Каталог
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="#">Example1</a></li>
+                        <li><a class="dropdown-item" href="#">Example2</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">EXAMPLE</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex media-search">
+                    <input class="form-control col-6 search-area" type="search" placeholder="Найти медицинскую маску" aria-label="Search">
+                    <button class="btn btn-outline-success search-area" type="submit"><img src="./files/img/icons/searchblack.svg" alt=""></button>
+                  </form>
+                  <ul class="d-flex">
+                      
+                      <!-- No registered accounts -->
+                      <!-- <li><a href="./log-in.html" class="nav-btn"><img class="btn-ico_header" src="./files/img/icons/auth.svg" alt="">Войти</a></li> -->
+
+                        <!-- Registered accounts -->
+                        <li class="dropdown">
+                        <a class="dropdown-toggle nav-btn user_name-nav" href="#" id="account-menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="./files/img/icons/acc.svg" alt="auth"> Alisher
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="account-menu">
+                          <li><a class="dropdown-item" href="./my-account.html">Личный кабинет</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="./log-out.html">Выход</a></li>
+                        </ul>
+                        </li>
+                     
+
+
+                      <li><a href="./liked-noauth.html" class="nav-btn"><img class="btn-ico_header" src="./files/img/icons/liked.svg" alt="">Избранное</a></li>
+                      <li><a href="./basket-noauth.html" class="nav-btn"><img class="btn-ico_header" src="./files/img/icons/basket.svg" alt="">Корзина</a></li>
+                  </ul>
+                </div>
+              </div>
+          </nav>
+         
+          <nav class="container navbar navbar-light bg-light search-catalog">
+              <form class="form-inline d-flex">
+                <input class="form-control mr-sm-2 search-area" type="search" placeholder="Введите адрес" aria-label="Поиск">
+                <div class="nav-add d-flex">
+                  <input class="form-control mr-sm-2 search-area" type="search" placeholder="дом" aria-label="Поиск">
+                  <input class="form-control mr-sm-2 search-area" type="search" placeholder="корп." aria-label="Поиск">
+                  <input class="form-control mr-sm-2 search-area" type="search" placeholder="стр." aria-label="Поиск">
+                  <input class="form-control mr-sm-2 search-area" type="search" placeholder="эт." aria-label="Поиск">
+                  <input class="form-control mr-sm-2 search-area" type="search" placeholder="кв." aria-label="Поиск">
+                </div>
+                <button class="nav-btn order-time btn btn-outline-success my-2 my-sm-0" type="submit">Выбрать</button>
+              </form>
+          </nav>
+    </header>
+
+    <main class="container my-account">
+
+        <div class="d-flex align-items-start">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link acc-item active" id="v-pills-acc-tab" data-bs-toggle="pill" href="#v-pills-acc" role="tab" aria-controls="v-pills-acc" aria-selected="true">Личный кабинет</a>
+              <a class="nav-link acc-item" id="v-pills-order-tab" data-bs-toggle="pill" href="#v-pills-order" role="tab" aria-controls="v-pills-order" aria-selected="false">Мои заказы</a>
+              <a class="nav-link acc-item" id="v-pills-bought-tab" data-bs-toggle="pill" href="#v-pills-bought" role="tab" aria-controls="v-pills-bought" aria-selected="false">Купленные товары</a>
+              <a class="nav-link acc-item" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Сообщения</a>
+            </div>
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-acc" role="tabpanel" aria-labelledby="v-pills-acc-tab">
+
+                <div class="profile-photo">
+                  <span><i class="fas fa-user"></i></span>
+                  <div class="img-upload">
+                    <p>Изображение используется для отзывов и комментариев</p>
+                    <div>
+                      <label tabindex="0" class="mb-0 fg-primary profile-avatar-modify__label profile-avatar-modify__input">
+                        <span>
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6.4099L9.30003 8.1199C9.11173 8.3082 8.85633 8.41399 8.59003 8.41399C8.32373 8.41399 8.06833 8.3082 7.88003 8.1199C7.69173 7.93159 7.58594 7.6762 7.58594 7.4099C7.58594 7.14359 7.69173 6.8882 7.88003 6.6999L11.29 3.2899C11.3851 3.19886 11.4973 3.12749 11.62 3.0799C11.8635 2.97988 12.1366 2.97988 12.38 3.0799C12.5028 3.12749 12.6149 3.19886 12.71 3.2899L16.12 6.6999C16.2138 6.79286 16.2882 6.90346 16.3389 7.02532C16.3897 7.14718 16.4158 7.27788 16.4158 7.4099C16.4158 7.54191 16.3897 7.67261 16.3389 7.79447C16.2882 7.91633 16.2138 8.02693 16.12 8.1199C16.0271 8.21362 15.9165 8.28802 15.7946 8.33879C15.6727 8.38956 15.542 8.41569 15.41 8.41569C15.278 8.41569 15.1473 8.38956 15.0255 8.33879C14.9036 8.28802 14.793 8.21362 14.7 8.1199L13 6.4099V13.9999C13 14.2651 12.8947 14.5195 12.7071 14.707C12.5196 14.8945 12.2652 14.9999 12 14.9999C11.7348 14.9999 11.4805 14.8945 11.2929 14.707C11.1054 14.5195 11 14.2651 11 13.9999V6.4099ZM19.2929 11.2928C19.4804 11.1052 19.7348 10.9999 20 10.9999C20.2652 10.9999 20.5196 11.1052 20.7071 11.2928C20.8946 11.4803 21 11.7347 21 11.9999C21 14.3868 20.0518 16.676 18.364 18.3638C16.6761 20.0517 14.3869 20.9999 12 20.9999C9.61305 20.9999 7.32387 20.0517 5.63604 18.3638C3.94821 16.676 3 14.3868 3 11.9999C3 11.7347 3.10536 11.4803 3.29289 11.2928C3.48043 11.1052 3.73478 10.9999 4 10.9999C4.26522 10.9999 4.51957 11.1052 4.70711 11.2928C4.89464 11.4803 5 11.7347 5 11.9999C5 13.8564 5.7375 15.6369 7.05025 16.9496C8.36301 18.2624 10.1435 18.9999 12 18.9999C13.8565 18.9999 15.637 18.2624 16.9497 16.9496C18.2625 15.6369 19 13.8564 19 11.9999C19 11.7347 19.1054 11.4803 19.2929 11.2928Z" fill="#0DB14B">
+                            </path>
+                          </svg>
+                        </span><!----><span class="d-none d-sm-inline-block">Загрузить</span><input type="file" accept="image/*" style="display: none;"></label><!----></div>
+                    </div>
+                </div>
+
+                <div class="acc_info">
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Телефон</label>
+                    <input type="tel" class="form-control" id="formGroupExampleInput" placeholder="+998 946384336">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="t.alisherkhuja@gmail.com">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput3" class="form-label">Фамилия</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Tulagankhujaev">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput4" class="form-label">Имя</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Alisher">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput5" class="form-label">Указать дату рождения</label>
+                    <input type="date" class="form-control" id="formGroupExampleInput5" placeholder="Alisher">
+                  </div>
+                </div>
+
+                <div class="gender">
+                  <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                  <label class="btn btn-secondary" for="option1">Мужчина</label>
+
+                  <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                  <label class="btn btn-secondary" for="option2">Женщина</label>
+                </div>
+
+                <div class="acc-adress">
+                  <span>Мои адреса доставки</span>
+                  <div class="btn-adress">
+                    <input type="btn" class="btn-check" name="options" id="option3" autocomplete="off">
+                    <label class="btn btn-secondary" for="option3">Добавить адрес</label>
+                  </div>
+                </div>
+                <div class="nav-btn" style="margin: 30px 0;"><a href="./index.html">На главную</a></div>
+              </div>
+
+
+              <div class="tab-pane fade" id="v-pills-order" role="tabpanel" aria-labelledby="v-pills-order-tab">
+                
+                <div class="history_head">
+                  <h2>История заказов</h2>
+                </div>
+
+                <div class="history_main">
+                  <img src="./files/img/icons/logo.png" alt="logo">
+                  <h2>У вас пока нет ни одного заказа</h2>
+                  <span>Воспользуйтесь скидкой 5000 sum и бесплатной доставкой на первый заказ</span>
+                  <div class="nav-btn"><a href="./index.html">На главную</a></div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-bought" role="tabpanel" aria-labelledby="v-pills-bought-tab">
+                <div class="history_head">
+                  <h2>Купленные товары</h2>
+                </div>
+
+                <div class="history_main">
+                  <img src="./files/img/icons/logo.png" alt="logo">
+                  <h2>Ни одного товара не было куплено</h2>
+                  <span>Здесь отображаются все товары, которые вы покупали ранее. Совершите свой первый заказ</span>
+                  <div class="nav-btn"><a href="./index.html">На главную</a></div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                <div class="message-head">
+                  <h2>Сообщения</h2>
+                  <p>Если у вас срочный вопрос, позвоните в службу поддержки <span><a href="tel:+998901234567" style="text-decoration: none;">+998 90 123 45 67</a></span></p>
+                  <p>Ответы на многие вопросы уже есть в <span><a href="./faq.html" style="text-decoration: none; ">нашем FAQ.</a></span></p>
+                  <p>По другим проблемам, напишите нам.</p>
+                  <a href="./support.html" class="tex-supp">Написать в поддержку</a>
+                </div>
+                <hr>
+                <div class="message-dashboard">
+                  <h3 class="dash-title">И НОВОСТИ, И СКИДКИ</h3>
+                  <div class="date-delete">
+                    <span class="dash-date">7 апреля 08:51</span>
+                    <a href="#"><i class="far fa-trash"></i> Удалить</a>
+                  </div>
+                  <div class="dash-sms_text">
+                    <div>
+                      <p>
+                        <span>Здравствуйте!</span>
+                      </p>
+                      <p>
+                        <span> 🔥 <br></span><span><strong><a href="index.html" style="text-decoration: none; ">Собрать корзину</a></strong><b>🛒</b></span>
+                      </p>
+                      <p><span>Ваша команда USHOP ОНЛАЙН 💛</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="container">
+          <div class="footer-menu">
+            <div class="col-6 col-sm-3 footer-cols-left">
+              <a class="abt-comp__footer" href="#">О Компании</a>
+              <ul>
+                <li><a href="#">Поставщикам</a></li>
+                <li><a href="#">Вакансии в компании</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Политика обработки персональных данных</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-3 footer-cols-right">
+              <h2 class="customers">Покупателям</h2>
+              <ul>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Как вернуть</a></li>
+                <li><a href="#">Как заказать</a></li>
+                <li><a href="#">Программа лояльности</a></li>
+                <li><a href="#">Сервисные центры</a></li>
+                <li><a href="#">Вопросы и ответы</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 footer-abt">
+              <div class="main-footer">
+                <div class="footer-tel">
+                  <a href="tel:998901234567" class="tel-a">+998 90 123 45 67</a>
+                  <a href="tel:998901234567" class="tel-a">+998 90 123 45 67</a>
+                </div>
+                <p class="footer-desc">Заказывайте товары круглосуточно и задавайте вопросы.</p>
+                <div class="footer-social">
+                  <a href="#"><span class="fab fa-vk"></span></a>
+                  <a href="#"><span class="fab fa-facebook-f"></span></a>
+                  <a href="#"><span class="fab fa-odnoklassniki"></span></a>
+                  <a href="#"><span class="fab fa-instagram"></span></a>
+                  <a href="#"><span class="fab fa-youtube"></span></a>
+                </div>
+                <div class="footer-store">
+                  <a href="#"><img src="./files/apps/apple.png" alt="app-store"></a>
+                  <a href="#"><img src="./files/apps/play.png" alt="play-market"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="horizontal-spacer">
+            <hr>
+          </div>
+
+          <div class="copyright">
+            <div class="copyright-left">
+              <span>© Интернет-магазин Ushop.</span>
+              <a href="#">Доставка продуктов на дом</a>
+            </div>
+            <div class="copyright-right">
+              <p>Есть вопрос? Напишите нам письмо
+                или воспользуйтесь формой <a href="#">обратной связи</a></p>
+            </div>
+          </div>
+
+
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./plugins/my-slider/chiefslider.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+</html>

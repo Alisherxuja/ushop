@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поставщикам</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main-style.css">
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./plugins/my-slider/chiefslider.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+        <header >
+            <nav class="navbar navbar-expand-lg navbar-light bg-light u-header d-flex justify-content-between">
+            <div class="container-fluid container d-flex justify-content-between">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <div class="u-header__city d-flex">
+                  <span>
+                      <img src="./files/img/icons/location.svg" alt="loc"
+                          class="mr-1">
+                  </span>
+                  <div class="define-city head_a">Узбекистан</div>
+                </div>
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="tel:998901234567">
+                      <span><img src="./files/img/icons/call.svg" alt=""></span>
+                      +998 90 123 45 67
+                    </a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="langdrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Язык
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="langdrop">
+                      <li><a class="dropdown-item" href="#">O`zbekcha</a></li>
+                      <li><a class="dropdown-item" href="#">Русский язык</a></li>
+                    </ul>
+                  </li>
+
+                </ul>
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="./recipes.html">Рецепты</a></li>
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="./delivery-and-payment.html">Доставка и самовывоз</a></li>
+                  <li class="nav-item"><a class="header-faq nav-link active" aria-current="page" href="./faq.html">Вопросы и ответы</a></li>
+                  <li class="nav-item"><a class="nav-link active ord-time" aria-current="page" href="./interval.html"><img src="./files/img/icons/time.svg" alt="clock" style="margin-right: 3px;">Выбрать время</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    
+          <nav class="navbar nav-white navbar-expand-lg navbar-light bg-light d-flex justify-content-center nav-white "> 
+              <div class="container d-flex justify-content-center nd-header">
+                <a class="navbar-brand" href="./index.html"><img class="nav-logo" src="./files/img/icons/logo.png" alt=""></a>
+                <div class="collapse nd-header navbar-collapse d-flex justify-content-around" id="navbarScroll">
+                  <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;"></ul>
+                      <li class="catalog-menu">
+                        <span style="font-size:20px; cursor:pointer" onclick="openNav()">&#9776; Каталог</span>
+
+                      <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content container">
+                          
+
+                          
+                          
+
+                          <div class="d-flex justify-content-center">
+
+                            <div id="cats-left">
+                              <ul>
+                                <li>
+                                  <a href="#" class="cat" id="cat1">Овощи, зелень</a>
+                                </li>
+                                <li>
+                                  <a href="#" class="cat" id="cat2">Фрукты и сухофрукты</a>
+                                </li>
+                                <li>
+                                  <a href="#" class="cat" id="cat3">Молочные продукты, сыр, яйца</a>
+                                </li>
+                              </ul>
+                            </div>
+                            
+                            
+                            <div id="subcats-right">
+                              <div class="right-media right-items1 hovered">
+                                <ul class="column-right col-4">
+                                  <li><a href="#">Овощи</a></li>
+                                  <li><a href="#">Зелень</a></li>
+                                </ul>
+                                <ul class="column-right col-4">
+                                  <li><a href="#">Овощи</a></li>
+                                  <li><a href="#">Зелень</a></li>
+                                </ul>
+                                <ul class="column-right col-4">
+                                  <li><a href="#">Овощи</a></li>
+                                  <li><a href="#">Зелень</a></li>
+                                </ul>
+                              </div>
+
+                              <div class="right-items2 right-media">
+                                <ul class="column-right col-4">
+                                  <li><a href="#">Сухофрукты</a></li>
+                                  <li><a href="#">Фрукты и ягоды</a></li>
+                                </ul>
+                                <ul class="column-right col-4">
+                                  <li><a href="#">Сухофрукты</a></li>
+                                  <li><a href="#">Фрукты и ягоды</a></li>
+                                </ul>
+                                <ul class="column-right col-4">
+                                  <li><a href="#">Сухофрукты</a></li>
+                                  <li><a href="#">Фрукты и ягоды</a></li>
+                                </ul>
+                              </div>
+                            
+
+                              <div class="right-items3 right-media">
+                                <ul class="column-right col-4">
+                                  <li><a href="#">Молоко и сливки</a></li>
+                                  <li><a href="#">Сливки</a></li>
+                                  <li><a href="#">Молоко</a></li>
+                                  <li><a href="#">Кисломолочные продукты</a></li>
+                                  <li><a href="#">Сырки твороженные</a></li>
+                                  <li><a href="#">Сметана</a></li>
+                                  <li><a href="#">Творог и творожные продукты</a></li>
+                                  <li><a href="#">Ряженка</a></li>
+                                  <li><a href="#">Кефир</a></li>
+                                  <li><a href="#">Сыры</a></li>
+                                </ul>
+                                <ul class="column-right col-4">
+                                  <li><a href="#">Йогурты</a></li>
+                                  <li><a href="#">Яйца</a></li>
+                                  <li><a href="#">Майонез</a></li>
+                                </ul>
+                                <ul class="column-right col-4">
+                                  <li><a href="#">Масло сливочное</a></li>
+                                  <li><a href="#">Маргарин</a></li>
+                                  <li><a href="#">Масло сливочное</a></li>
+                                  <li><a href="#">Полуфабрикаты</a></li>
+                                  <li><a href="#">Кукуруза</a></li>
+                                  <li><a href="#">Тесто</a></li>
+                                </ul>
+                              </div>
+                            </div>
+
+                          </div>
+
+                          
+
+
+
+
+                          
+                        </div>
+                      </div>
+
+                    </li>
+                  <form class="d-flex media-search">
+                    <input class="form-control col-6 search-area" type="search" placeholder="Найти медицинскую маску" aria-label="Search">
+                    <button class="btn btn-outline-success search-area" type="submit"><img src="./files/img/icons/searchblack.svg" alt=""></button>
+                  </form>
+                  <ul class="d-flex header-menu">
+                      
+                      <!-- No registered accounts -->
+                      <!-- <li><a href="./log-in.html" class="nav-btn"><img class="btn-ico_header" src="./files/img/icons/auth.svg" alt="">Войти</a></li> -->
+
+                        <!-- Registered accounts -->
+                        <li class="dropdown">
+                        <a class="dropdown-toggle nav-btn user_name-nav" href="#" id="account-menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="./files/img/icons/acc.svg" alt="auth"> Alisher
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="account-menu">
+                          <li><a class="dropdown-item" href="./my-account.html">Личный кабинет</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="log-out.html">Выход</a></li>
+                        </ul>
+                        </li>
+                     
+
+
+                      <li><a href="./liked-noauth.html" class="nav-btn"><i class="far fa-bookmark btn-ico_header"></i>Избранное</a></li>
+                      <li class="d-flex basket-li">
+                        <img class="btn-ico_header" src="./files/img/icons/basket.svg" alt="">
+                          <div class="nav-pax">
+                            <div class="down-drop">
+                              <button onclick="openBas()" class="btn-drop"><a onclick="openBas()" class="nav-btn m-0">Корзина</a></button>
+                                <div id="mySidenav" class="sidenav dropdown-cons">
+                                  <div class="header-basket">
+                                    <a href="basket.html" class="to-basket"><img class="btn-ico_header" src="./files/img/icons/basket.svg" alt="">Перейти в корзину</a>
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeBas()">&times;</a>
+                                  </div>
+                                  <a href="#">
+                                    <div class="owl-car-item">
+                                        <img src="./files/recipe/1.jpg" alt="">
+                                        <div class="o-item_info"><span>40 минут</span>•<span>8 ингредиентов</span></div>
+                                        <h4 class="o-item_title">Постный бургер с грибной котлетой</h4>
+                                    </div>
+                                  </a>
+                                  <a href="#">
+                                    <div class="owl-car-item">
+                                      <img src="./files/recipe/1.jpg" alt="">
+                                      <div class="o-item_info"><span>40 минут</span>•<span>8 ингредиентов</span></div>
+                                      <h4 class="o-item_title">Постный бургер с грибной котлетой</h4>
+                                  </div>
+                                  </a>
+                                  <a href="#">
+                                    <div class="owl-car-item">
+                                      <img src="./files/recipe/1.jpg" alt="">
+                                      <div class="o-item_info"><span>40 минут</span>•<span>8 ингредиентов</span></div>
+                                      <h4 class="o-item_title">Постный бургер с грибной котлетой</h4>
+                                  </div>
+                                  </a>
+                                  <a href="#">
+                                    <div class="owl-car-item">
+                                      <img src="./files/recipe/1.jpg" alt="">
+                                      <div class="o-item_info"><span>40 минут</span>•<span>8 ингредиентов</span></div>
+                                      <h4 class="o-item_title">Постный бургер с грибной котлетой</h4>
+                                  </div>
+                                  </a>
+                                </div>
+                                
+                              
+                            </div>
+                          </div>
+                      
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </nav>
+         
+          <nav class="container navbar navbar-light bg-light search-catalog">
+              <form class="form-inline d-flex">
+                <input class="form-control mr-sm-2 search-area" type="search" placeholder="Введите адрес" aria-label="Поиск">
+                <div class="nav-add d-flex">
+                  <input class="form-control mr-sm-2 search-area" type="search" placeholder="дом" aria-label="Поиск">
+                  <input class="form-control mr-sm-2 search-area" type="search" placeholder="корп." aria-label="Поиск">
+                  <input class="form-control mr-sm-2 search-area" type="search" placeholder="стр." aria-label="Поиск">
+                  <input class="form-control mr-sm-2 search-area" type="search" placeholder="эт." aria-label="Поиск">
+                  <input class="form-control mr-sm-2 search-area" type="search" placeholder="кв." aria-label="Поиск">
+                </div>
+                <button class="nav-btn order-time btn btn-outline-success my-2 my-sm-0" type="submit">Выбрать</button>
+              </form>
+          </nav>
+        </header>
+
+
+        <main>
+
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                   <div class="suppliers-main">
+
+                        <h2>Поставщикам</h2>
+                        <p>Уважаемые поставщики, если Вас заинтересовало сотрудничество с нашей компанией по поставкам продукции, предлагаем отправить нам коммерческое предложение и ознакомиться с условиями сотрудничества и типовым договором поставки.</p>
+                        <h3>Коммерческое предложение</h3>
+                        <span>Условия отбора Поставщиков:</span>
+                        <ul>
+                            <li> <i class="fas fa-circle"></i>Качество товара соответствует требованиям законодательства на протяжении всего периода сотрудничества.</li>
+                            <li> <i class="fas fa-circle"></i>Цены на поставляемый товар являются конкурентоспособными и соответствуют требованиям наших покупателей.</li>
+                            <li> <i class="fas fa-circle"></i>Товар имеет индивидуальную и транспортную упаковку, содержащую информацию о наименовании товара, штрих-коде, наименовании и адресе производителя, дате изготовления и сроке годности, условиях хранения и другую необходимую информацию.</li>
+                            <li> <i class="fas fa-circle"></i>Бесперебойные поставки товара на РЦ.</li>
+                            <li> <i class="fas fa-circle"></i>Отсутствие задолженности по налогам и сборам.</li>
+                            <li> <i class="fas fa-circle"></i>Прогноз продаж товара</li>
+                            <li> <i class="fas fa-circle"></i>Информация о присутствии товара в торговых точках г. Ташкент.</li>
+                            <li> <i class="fas fa-circle"></i>Показатели продаж товара в отчетах аналитических агентств.</li>
+                        </ul> 
+                        <h3>Сооб щить о проблеме</h3>
+                        <ul> 
+                            <li><i class="fas fa-circle"></i>Если с Вас или Вашего юридического лица требуют деньги для гарантированного получения заказов, победы в конкурсных процедурах и пр.</li>
+                            <li><i class="fas fa-circle"></i>Если Вам или Вашему юридическому лицу не отвечает менеджер, с которым ведётся деловая переписка.</li>
+                            <li><i class="fas fa-circle"></i>Если Вам или Вашему юридическому лицу сотрудники Компании ООО "Новый импульс-50" предлагают участие в разных мошеннических схемах для получения личной выгоды или других незаконных мероприятиях.</li>
+                        </ul>
+                        <p>По всем перечисленным проблемам следует обратиться в Департамент по обеспечению бизнеса одним из следующих способов:</p>
+                        <ul>
+                            <li>Написать обращение - <a href="mailto:info@ushop.uz">info@ushop.uz</a></li>
+                            <li>Телефон доверия - <a href="tel:998901234567">+998 90 123 45 67</a></li>
+                        </ul>
+                    
+                   </div>
+                </div>
+            </div>
+
+        </main>
+
+
+        <footer>
+            <div class="container">
+              <div class="footer-menu">
+                <div class="col-6 col-sm-3 footer-cols-left">
+                  <a class="abt-comp__footer" href="#">О Компании</a>
+                  <ul>
+                    <li><a href="#">Поставщикам</a></li>
+                    <li><a href="#">Политика обработки персональных данных</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-sm-3 footer-cols-right">
+                  <h2 class="customers">Покупателям</h2>
+                  <ul>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Сервисные центры</a></li>
+                    <li><a href="#">Вопросы и ответы</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 footer-abt">
+                  <div class="main-footer">
+                    <div class="footer-tel">
+                      <a href="tel:998901234567" class="tel-a">+998 90 123 45 67</a>
+                      <a href="tel:998901234567" class="tel-a">+998 90 123 45 67</a>
+                    </div>
+                    <p class="footer-desc">Заказывайте товары круглосуточно и задавайте вопросы.</p>
+                    <div class="footer-social">
+                      <a href="#"><span class="fab fa-vk"></span></a>
+                      <a href="#"><span class="fab fa-facebook-f"></span></a>
+                      <a href="#"><span class="fab fa-odnoklassniki"></span></a>
+                      <a href="#"><span class="fab fa-instagram"></span></a>
+                      <a href="#"><span class="fab fa-youtube"></span></a>
+                    </div>
+                    <div class="footer-store">
+                      <a href="#"><img src="./files/apps/apple.png" alt="app-store"></a>
+                      <a href="#"><img src="./files/apps/play.png" alt="play-market"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="horizontal-spacer">
+                <hr>
+              </div>
+
+              <div class="copyright">
+                <div class="copyright-left">
+                  <span>© Интернет-магазин Ushop.</span>
+                  <a href="#">Доставка продуктов на дом</a>
+                </div>
+                <div class="copyright-right">
+                  <p>Есть вопрос? Напишите нам письмо
+                    или воспользуйтесь формой <a href="#">обратной связи</a></p>
+                </div>
+              </div>
+
+
+            </div>
+        </footer>
+    
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="./plugins/my-slider/chiefslider.js"></script>
+        <script src="./js/app.js"></script>
+        <script src="./js/cat-app.js"></script>
+</body>
+</html>
